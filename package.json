@@ -1,0 +1,68 @@
+{
+  "name": "egg-typescript-sequelize",
+  "version": "1.0.0",
+  "description": "sequelize-typescript for Egg.js",
+  "eggPlugin": {
+    "name": "tsSequelize"
+  },
+  "keywords": [
+    "egg",
+    "sequelize",
+    "eggPlugin",
+    "egg-plugin",
+    "orm",
+    "ts",
+    "ts-sequelize",
+    "sequelize-ts"
+  ],
+  "dependencies": {
+    "reflect-metadata": "^0.1.13",
+    "sequelize": "^5.5.1",
+    "sequelize-typescript": "^1.0.0-alpha.9"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "egg": "^2.16.0",
+    "egg-bin": "^4.11.0",
+    "egg-ci": "^1.11.0",
+    "egg-mock": "^3.21.0",
+    "eslint": "^5.13.0",
+    "eslint-config-egg": "^7.1.0",
+    "mysql2": "^1.6.5"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "npm run tsc && egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
+    "pkgfiles": "egg-bin pkgfiles",
+    "autod": "autod",
+    "tsc": "ets && tsc -p tsconfig.json"
+  },
+  "files": [
+    "config",
+    "agent.js",
+    "lib",
+    "app.js",
+    "tshelper.js",
+    "index.d.ts"
+  ],
+  "ci": {
+    "version": "8, 10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/souche-hero/egg-typescript-sequelize.git"
+  },
+  "bugs": {
+    "url": "https://github.com/souche-hero/egg-typescript-sequelize/issues"
+  },
+  "homepage": "https://github.com/souche-hero/egg-typescript-sequelize#readme",
+  "author": "xl",
+  "license": "MIT"
+}
