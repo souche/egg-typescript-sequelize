@@ -23,7 +23,7 @@ exports.sequelize = {
       define: {
         timestamps: false,
         freezeTableName: true,
-        underscored: true,
+        // underscored: true,
       },
     },
   },

@@ -1,6 +1,6 @@
 {
   "name": "egg-typescript-sequelize",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "sequelize-typescript for Egg.js",
   "eggPlugin": {
     "name": "tsSequelize"
@@ -39,10 +39,11 @@
     "test-local": "npm run tsc && egg-bin test",
     "cov": "egg-bin cov",
     "lint": "eslint .",
-    "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
+    "ci": "egg-bin pkgfiles --check && npm run lint && npm run tsc && npm run cov && npm run clean",
     "pkgfiles": "egg-bin pkgfiles",
     "autod": "autod",
-    "tsc": "ets && tsc -p tsconfig.json"
+    "tsc": "ets && tsc -p tsconfig.json",
+    "clean": "ets clean"
   },
   "files": [
     "config",
