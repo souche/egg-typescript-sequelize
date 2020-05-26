@@ -34,11 +34,11 @@ declare module 'egg' {
       clients: {
         [index: string]: TsSequelizeOptions;
       }
+      default: TsSequelizeOptions;
+      // 是否加载到 app，默认 true
+      app?: boolean;
+      // 是否加载到 agent，默认 false
+      agent?: boolean;
     },
-    default: TsSequelizeOptions;
-    // 是否加载到 app，默认 true
-    app?: boolean;
-    // 是否加载到 agent，默认 false
-    agent?: boolean;
   }
 }
