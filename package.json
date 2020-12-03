@@ -16,9 +16,12 @@
     "sequelize-ts"
   ],
   "dependencies": {
+    "@types/node": "*",
+    "@types/bluebird": "^3.5.33",
+    "@types/validator": "^13.1.1",
     "reflect-metadata": "^0.1.13",
     "sequelize": "^5.5.1",
-    "sequelize-typescript": "^1.0.0-alpha.9"
+    "sequelize-typescript": "^1.1.0"
   },
   "devDependencies": {
     "autod": "^3.0.1",
